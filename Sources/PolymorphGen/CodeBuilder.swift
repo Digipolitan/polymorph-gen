@@ -12,9 +12,9 @@ public class CodeBuilder {
     private var code: String
     private var depth: Int
 
-    public init() {
+    public init(depth: Int = 0) {
         self.code = ""
-        self.depth = 0
+        self.depth = depth
     }
 
     @discardableResult
