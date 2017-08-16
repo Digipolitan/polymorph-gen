@@ -21,7 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		A30726111F3B6955001AE94C /* CodeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30726101F3B6955001AE94C /* CodeBuilder.swift */; };
 		A396F6A81F3B3EC400CD2EB4 /* PlatformGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A396F6A61F3B3E8E00CD2EB4 /* PlatformGen.swift */; };
 		A396F6AA1F3B423600CD2EB4 /* Dir.swift in Sources */ = {isa = PBXBuildFile; fileRef = A396F6A91F3B423600CD2EB4 /* Dir.swift */; };
 		OBJ_45 /* PolymorphGenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* PolymorphGenTests.swift */; };
@@ -102,7 +101,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A30726101F3B6955001AE94C /* CodeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBuilder.swift; sourceTree = "<group>"; };
 		A396F6A61F3B3E8E00CD2EB4 /* PlatformGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformGen.swift; sourceTree = "<group>"; };
 		A396F6A91F3B423600CD2EB4 /* Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dir.swift; sourceTree = "<group>"; };
 		OBJ_11 /* PolymorphGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolymorphGen.swift; sourceTree = "<group>"; };
@@ -278,7 +276,6 @@
 				A396F6A91F3B423600CD2EB4 /* Dir.swift */,
 				OBJ_11 /* PolymorphGen.swift */,
 				A396F6A61F3B3E8E00CD2EB4 /* PlatformGen.swift */,
-				A30726101F3B6955001AE94C /* CodeBuilder.swift */,
 			);
 			name = PolymorphGen;
 			path = Sources/PolymorphGen;
@@ -403,7 +400,6 @@
 				OBJ_60 /* File.swift in Sources */,
 				A396F6AA1F3B423600CD2EB4 /* Dir.swift in Sources */,
 				OBJ_62 /* PolymorphGen.swift in Sources */,
-				A30726111F3B6955001AE94C /* CodeBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
