@@ -17,6 +17,8 @@ open class PlatformGen {
         }
     }
 
+    public init() { }
+
     public func generate(_ project: Project, options: Options) throws -> [File] {
         var files: [File] = []
         files.append(contentsOf: try self.models(project.models, options: options))
