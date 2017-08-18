@@ -23,6 +23,10 @@ extension File {
 
     @discardableResult
     public func write() -> Bool {
-        return FileManager.default.createFile(atPath: "\(self.path)/\(self.name)", contents: self.data, attributes: nil)
+        let fileManager = FileManager.default
+        guard (try? fileManager.createDirectory(atPath: self.path, withIntermediateDirectories: true, attributes: nil)) != nil else {
+            return false
+        }
+        return fileManager.createFile(atPath: "\(self.path)/\(self.name)", contents: self.data, attributes: nil)
     }   
 }
