@@ -24,7 +24,7 @@ public struct PolymorphGen {
 
     public func generate(_ project: Project, options: Options) throws {
         let childPath = try Dir.mkdirTmp(path: options.path)
-        let childOptions = PlatformGen.Options(path: childPath)
+        let childOptions = PlatformGen.Options(path: "\(childPath)/\(project.package.path(camelcase: true))")
         for generator in self.generators {
             let files = try generator.generate(project, options: childOptions)
             files.forEach({ $0.write() })
