@@ -16,4 +16,8 @@ public struct Dir {
         try FileManager.default.createDirectory(atPath: childPath, withIntermediateDirectories: true, attributes: nil)
         return childPath
     }
+
+    public static func cd(parent: String, children: [String]) -> String {
+        return "\(parent)\(children.map { "/\($0)" })"
+    }
 }
