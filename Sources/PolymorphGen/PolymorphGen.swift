@@ -16,17 +16,16 @@ public struct PolymorphGen {
         }
     }
 
-    public var generators: [PlatformGen]
+    public var platforms: [PlatformGen.Type]
 
-    public init(generators: [PlatformGen] = []) {
-        self.generators = generators
+    public init(platforms: [PlatformGen.Type] = []) {
+        self.platforms = platforms
     }
 
     public func generate(_ project: Project, options: Options) throws {
         let childPath = try Dir.mkdirTmp(path: options.path)
-        for generator in self.generators {
-            let generatorType = type(of: generator)
-            let files = try generator.generate(project, options: Options(path: Dir.cd(parent: childPath, children: [generatorType.name])))
+        for platform in self.platforms {
+            let files = try platform.shared.generate(project, options: Options(path: Dir.cd(parent: childPath, children: [platform.name])))
             files.forEach({ $0.write() })
         }
     }
