@@ -9,6 +9,6 @@ import Foundation
 import PolymorphCore
 
 public protocol PlatformGen {
-    var name: String { get }
+    static var name: String { get }
     func generate(_ project: Project, options: PolymorphGen.Options) throws -> [File]
 }
