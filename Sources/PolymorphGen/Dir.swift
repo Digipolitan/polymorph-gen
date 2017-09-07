@@ -18,6 +18,9 @@ public struct Dir {
     }
 
     public static func cd(parent: String, children: [String]) -> String {
-        return "\(parent)\(children.map { "/\($0)" })"
+        if children.count > 0 {
+            return "\(parent)/\(children.joined(separator: "/"))"
+        }
+        return parent
     }
 }
