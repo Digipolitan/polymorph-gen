@@ -12,7 +12,7 @@ public protocol ClassFileBuilder {
     func build(element: Class, options: PolymorphGen.Options) throws -> [File]
 }
 
-public class ClassFileBuilderArray: ClassFileBuilder {
+open class ClassFileBuilderArray: ClassFileBuilder {
 
     private var children: [ClassFileBuilder] = []
 
