@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		A32540711F9E115B0026FE4F /* ClassFileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32540701F9E115B0026FE4F /* ClassFileBuilder.swift */; };
+		A32540731F9E11D70026FE4F /* EnumFileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32540721F9E11D70026FE4F /* EnumFileBuilder.swift */; };
 		OBJ_100 /* Documentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Documentable.swift */; };
 		OBJ_101 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Enum.swift */; };
 		OBJ_102 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Member.swift */; };
@@ -45,7 +47,6 @@
 		OBJ_72 /* PolymorphGen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PolymorphGen::PolymorphGen::Product" /* PolymorphGen.framework */; };
 		OBJ_73 /* PolymorphCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PolymorphCore::PolymorphCore::Product" /* PolymorphCore.framework */; };
 		OBJ_74 /* StringCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "StringCase::StringCase::Product" /* StringCase.framework */; };
-		OBJ_85 /* ClassFileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ClassFileBuilder.swift */; };
 		OBJ_86 /* Dir.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Dir.swift */; };
 		OBJ_87 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* File.swift */; };
 		OBJ_88 /* PlatformGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* PlatformGen.swift */; };
@@ -108,6 +109,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A32540701F9E115B0026FE4F /* ClassFileBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassFileBuilder.swift; sourceTree = "<group>"; };
+		A32540721F9E11D70026FE4F /* EnumFileBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumFileBuilder.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dir.swift; sourceTree = "<group>"; };
 		OBJ_11 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		OBJ_12 /* PlatformGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformGen.swift; sourceTree = "<group>"; };
@@ -134,7 +137,6 @@
 		OBJ_40 /* StringCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCase.swift; sourceTree = "<group>"; };
 		OBJ_41 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/bbriatte/Development/MacOS/Libraries/PolymorphGen/.build/checkouts/string-case-swift.git--1212291596022844212/Package.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* ClassFileBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassFileBuilder.swift; sourceTree = "<group>"; };
 		"PolymorphCore::PolymorphCore::Product" /* PolymorphCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PolymorphCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PolymorphGen::PolymorphGen::Product" /* PolymorphGen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PolymorphGen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PolymorphGen::PolymorphGenTests::Product" /* PolymorphGenTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PolymorphGenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +181,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A325406F1F9E115B0026FE4F /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				A32540701F9E115B0026FE4F /* ClassFileBuilder.swift */,
+				A32540721F9E11D70026FE4F /* EnumFileBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
 		OBJ_14 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,7 +278,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -277,7 +288,6 @@
 				OBJ_18 /* Dependencies */,
 				OBJ_42 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -291,7 +301,7 @@
 		OBJ_8 /* PolymorphGen */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* ClassFileBuilder.swift */,
+				A325406F1F9E115B0026FE4F /* Builders */,
 				OBJ_10 /* Dir.swift */,
 				OBJ_11 /* File.swift */,
 				OBJ_12 /* PlatformGen.swift */,
@@ -431,7 +441,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -493,9 +503,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_85 /* ClassFileBuilder.swift in Sources */,
+				A32540731F9E11D70026FE4F /* EnumFileBuilder.swift in Sources */,
 				OBJ_86 /* Dir.swift in Sources */,
 				OBJ_87 /* File.swift in Sources */,
+				A32540711F9E115B0026FE4F /* ClassFileBuilder.swift in Sources */,
 				OBJ_88 /* PlatformGen.swift in Sources */,
 				OBJ_89 /* PolymorphGen.swift in Sources */,
 			);
