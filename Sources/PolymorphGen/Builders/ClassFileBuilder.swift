@@ -14,7 +14,7 @@ public protocol ClassFileBuilder {
 
 open class ClassFileBuilderArray: ClassFileBuilder {
 
-    private var children: [ClassFileBuilder] = []
+    private var children: [ClassFileBuilder]
 
     public init(children: [ClassFileBuilder]) {
         self.children = children
