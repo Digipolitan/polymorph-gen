@@ -24,4 +24,3 @@ open class EnumFileBuilderArray: EnumFileBuilder {
         return try self.children.map { try $0.build(element: element, options: options) }.reduce([], { return $0 + $1 })
     }
 }
-

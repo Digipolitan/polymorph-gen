@@ -6,23 +6,19 @@ import PackageDescription
 let package = Package(
     name: "PolymorphGen",
     products: [
-        // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "PolymorphGen",
-            targets: ["PolymorphGen"]),
+            targets: ["PolymorphGen"])
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/Digipolitan/polymorph-core.git", .branch("develop")),
+        .package(url: "https://github.com/Digipolitan/polymorph-core.git", .branch("develop"))
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "PolymorphGen",
             dependencies: ["PolymorphCore"]),
         .testTarget(
             name: "PolymorphGenTests",
-            dependencies: ["PolymorphGen"]),
+            dependencies: ["PolymorphGen"])
     ]
 )
