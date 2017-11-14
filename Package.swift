@@ -11,7 +11,7 @@ let package = Package(
             targets: ["PolymorphGen"])
     ],
     dependencies: [
-        .package(url: "https://github.com/Digipolitan/polymorph-core.git", .branch("develop"))
+        .package(url: "https://github.com/Digipolitan/polymorph-core.git", from: "1.1.0")
     ],
     targets: [
         .target(
