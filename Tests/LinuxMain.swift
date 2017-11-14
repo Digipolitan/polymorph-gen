@@ -2,5 +2,5 @@ import XCTest
 @testable import PolymorphGenTests
 
 XCTMain([
-    testCase(PolymorphGenTests.allTests),
+    testCase(PolymorphGenTests.allTests)
 ])

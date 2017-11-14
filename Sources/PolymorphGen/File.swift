@@ -28,5 +28,5 @@ extension File {
             return false
         }
         return fileManager.createFile(atPath: "\(self.path)/\(self.name)", contents: self.data, attributes: nil)
-    }   
+    }
 }
