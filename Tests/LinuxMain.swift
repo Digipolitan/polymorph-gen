@@ -1,6 +1,7 @@
 import XCTest
-@testable import PolymorphGenTests
 
-XCTMain([
-    testCase(PolymorphGenTests.allTests)
-])
+import PolymorphGenTests
+
+var tests = [XCTestCaseEntry]()
+tests += PolymorphGenTests.allTests()
+XCTMain(tests)

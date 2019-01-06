@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PolymorphCore",
+        "repositoryURL": "https://github.com/Digipolitan/polymorph-core.git",
+        "state": {
+          "branch": null,
+          "revision": "85790096de3dda6d5d4c7c335f9b49326441c572",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "StringCase",
+        "repositoryURL": "https://github.com/Digipolitan/string-case-swift.git",
+        "state": {
+          "branch": null,
+          "revision": "565a596e8a511ff8995acc1b3f0167165acb2617",
+          "version": "1.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
