@@ -3,5 +3,5 @@ import XCTest
 
 class PolymorphGenTests: XCTestCase {
 
-    static var allTests: [(String, (PolymorphGenTests) -> Void -> Void)] = []
+    static var allTests: [(String, (PolymorphGenTests) -> () -> Void)] = []
 }
